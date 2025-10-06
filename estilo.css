@@ -4,14 +4,14 @@
   padding: 0; /*Elimina los huecos que los navegadores ponen por defecto, lo convierte en un lienzo por defecto*/
   box-sizing: border-box;} /* obliga al contenido a caber en las dimensiones que le marquemos, es como delimitar el tamaño máximo*/
 header {
-  background-color: #455A64; /*color de fondo*/
+  background-color: #BDBDBD; /*color de fondo*/
   color: #FFFFFF; /*Color de la fuente*/
   text-align: center; /*Alineación del texto*/
   font-family: Comic Sans MS; /*fuente*/
   margin-bottom: 5px;
   border-radius: 50px;} /*Esquinas redondeadas*/
   title { margin-top: 100px}
-  header img {border-radius: 10px}
+  header img {border-radius: 10px;  max-width: 100%;}
 nav ul {
   list-style: none; /* quita los puntos de la lista como explicó el profe en la primera videoconferencia */
  }
@@ -28,8 +28,8 @@ nav ul li {
   border-radius: 5px;         /* esquinas redondeadas */}
   
 section {
-  background-color: #607D8B; 
-  color:#FFFFFF; 
+  background-color: #F5F5F5; 
+  color:#616161; 
   font-family: Comic Sans MS;
   border-radius: 50px;}
 section h2 {
