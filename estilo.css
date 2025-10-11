@@ -1,13 +1,11 @@
 * { /*se aplica a toda la web*/
-  margin: 0;
-  margin-top: 10px;
-  padding: 0; /*Elimina los huecos que los navegadores ponen por defecto, lo convierte en un lienzo por defecto*/
-  box-sizing: border-box;} /* obliga al contenido a caber en las dimensiones que le marquemos, es como delimitar el tamaño máximo*/
+box-sizing: border-box;} /* obliga al contenido a caber en las dimensiones que le marquemos, es como delimitar el tamaño máximo*/
 header {
   background-color: #BDBDBD; /*color de fondo*/
   color: #FFFFFF; /*Color de la fuente*/
   text-align: center; /*Alineación del texto*/
   font-family: Comic Sans MS; /*fuente*/
+  font-size: xx-large;
   margin-bottom: 5px;
   border-radius: 50px;} /*Esquinas redondeadas*/
   title { margin-top: 100px}
@@ -26,7 +24,9 @@ nav ul li {
   font-weight: bold;          /* más grueso */
   padding: 10px 15px;         /* espacio alrededor */
   border-radius: 5px;         /* esquinas redondeadas */}
-  
+  body {
+    font-size:x-large;
+  }
 section {
   background-color: #F5F5F5; 
   color:#616161; 
@@ -34,7 +34,8 @@ section {
   border-radius: 50px;}
 section h2 {
   text-align: center; 
-  margin-bottom: 30px} /*solo válido para texto, pero no para imágenes*/
+  margin-bottom: 30px;
+font-size:xx-large;} /*solo válido para texto, pero no para imágenes*/
 section p {
   margin-left: 50px; 
   margin-right: 50px;
@@ -44,7 +45,7 @@ section img {
  display: inline-block;
  align-items: center;
  margin-top: 100px;
-  margin-left: 100px;
+  margin-left: 220px;
   max-width: 100%; /*La imagen se adapta al contenedor*/
   border-radius: 10px;}
 footer {
