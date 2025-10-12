@@ -5,11 +5,14 @@ header {
   color: #FFFFFF; /*Color de la fuente*/
   text-align: center; /*Alineación del texto*/
   font-family: Comic Sans MS; /*fuente*/
-  font-size: xx-large;
-  margin-bottom: 5px;
-  border-radius: 50px;} /*Esquinas redondeadas*/
+  font-size: xx-large; /*Tamaño de la fuente*/
+  margin-bottom: 5px; 
+  border-radius: 50px;} /*Esquinas redondeadas*//*Después de ver el vídeo, debería definir un prefijo para que los navegadores Web lo lean bien, aunque chrome lo haya realizado como buscaba*/
   title { margin-top: 100px}
-  header img {border-radius: 10px;  max-width: 100%;}
+  header img {
+    border-radius: 50px; 
+    max-width: 90%;
+    margin-top: 5%;}
 nav ul {
   list-style: none; /* quita los puntos de la lista como explicó el profe en la primera videoconferencia */
  }
@@ -21,12 +24,24 @@ nav ul li {
   nav ul li a {
   color: #FFFFFF;             /* color de la letra */
   text-decoration: none;      /* quita el subrayado */
-  font-weight: bold;          /* más grueso */
+  font-weight: bold;          /* fuente más gruesa */
   padding: 10px 15px;         /* espacio alrededor */
   border-radius: 5px;         /* esquinas redondeadas */}
   body {
     font-size:x-large;
-  }
+    max-width: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center}
+    h2{ 
+      margin-top: 5%;
+    }
+    p {
+      margin-bottom: 5%;
+    }
+    iframe {
+      border-radius: 50px
+    }
 section {
   background-color: #F5F5F5; 
   color:#616161; 
@@ -44,11 +59,13 @@ section p {
 section img {
  display: inline-block;
  align-items: center;
- margin-top: 100px;
-  margin-left: 220px;
+ margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
   max-width: 100%; /*La imagen se adapta al contenedor*/
   border-radius: 10px;}
 footer {
   background-color: #FFFFFF; 
   color: #212121; 
+  margin-top: 10%;
   font-family: Comic Sans MS}
