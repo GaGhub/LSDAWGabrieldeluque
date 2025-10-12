@@ -34,13 +34,18 @@ nav ul li {
     margin-right: 15%;
     text-align: center}
     h2{ 
-      margin-top: 5%;
+      margin: 5%;
     }
     p {
       margin-bottom: 5%;
     }
     iframe {
-      border-radius: 50px
+      border-radius: 50px;
+      margin: 4%;
+      width: 90%
+    }
+    h2 section{
+      margin: 5%
     }
 section {
   background-color: #F5F5F5; 
@@ -58,12 +63,10 @@ section p {
   justify-content: center}
 section img {
  display: inline-block;
- align-items: center;
- margin-top: 5%;
-  margin-left: 20%;
-  margin-right: 20%;
-  max-width: 100%; /*La imagen se adapta al contenedor*/
-  border-radius: 10px;}
+  width: 45%; /* dos imágenes por fila */
+  margin: 2%; /* espacio entre ellas */
+  border-radius: 50px;
+  vertical-align: middle; /* para que se alineen correctamente */}
 footer {
   background-color: #FFFFFF; 
   color: #212121; 
