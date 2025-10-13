@@ -2,13 +2,13 @@
 box-sizing: border-box;} /* obliga al contenido a caber en las dimensiones que le marquemos, es como delimitar el tamaño máximo*/
 header {
   background-color: #BDBDBD; /*color de fondo*/
+  max-width: 100%;
+  width: 100%;
   color: #FFFFFF; /*Color de la fuente*/
   text-align: center; /*Alineación del texto*/
   font-family: Comic Sans MS; /*fuente*/
   font-size: xx-large; /*Tamaño de la fuente*/
-  margin-bottom: 5px; 
   border-radius: 50px;} /*Esquinas redondeadas*//*Después de ver el vídeo, debería definir un prefijo para que los navegadores Web lo lean bien, aunque chrome lo haya realizado como buscaba*/
-  title { margin-top: 100px}
   header img {
     border-radius: 50px; 
     max-width: 90%;
@@ -16,11 +16,12 @@ header {
 nav ul {
   list-style: none; /* quita los puntos de la lista como explicó el profe en la primera videoconferencia */
  }
-nav ul li {
+  nav ul li {
   display: inline-block; /* coloca los <li> en línea */
   margin-right: 20px; /* separación entre elementos */
   margin-top: 30px;
-  margin-bottom: 30px}
+  margin-bottom: 30px
+  }
   nav ul li a {
   color: #FFFFFF;             /* color de la letra */
   text-decoration: none;      /* quita el subrayado */
@@ -30,12 +31,10 @@ nav ul li {
   body {
     font-size:x-large;
     max-width: 100%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 5%;
     text-align: center}
-    h2{ 
-      margin: 5%;
-    }
     p {
       margin-bottom: 5%;
     }
@@ -44,22 +43,27 @@ nav ul li {
       margin: 4%;
       width: 90%
     }
-    h2 section{
-      margin: 5%
-    }
+   
 section {
   background-color: #F5F5F5; 
   color:#616161; 
   font-family: Comic Sans MS;
+  padding: 1%;
+  margin: 2%;
   border-radius: 50px;}
-section h2 {
+  section h2 {
   text-align: center; 
-  margin-bottom: 30px;
-font-size:xx-large;} /*solo válido para texto, pero no para imágenes*/
+  width: 90%;
+  margin: 0 auto;
+  border-width: 2px;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #BDBDBD;
+  font-size:xx-large;} /*solo válido para texto, pero no para imágenes*/
 section p {
-  margin-left: 50px; 
-  margin-right: 50px;
-  margin-bottom: 5px;
+  margin-left: 10%; 
+  margin-right: 10%;
+  margin-bottom: 5%;
   justify-content: center}
 section img {
  display: inline-block;
@@ -70,5 +74,5 @@ section img {
 footer {
   background-color: #FFFFFF; 
   color: #212121; 
-  margin-top: 10%;
+  margin:5%;
   font-family: Comic Sans MS}
