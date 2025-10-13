@@ -6,3 +6,4 @@ Se actualiza la hoja de estilos intentando dar un aspecto más atractivo y se ca
 Cambio de favicon y ajuste de imágenes. Además se incluye en CSS reset para normalizar los estilos de base en todos los navegadores. Por ello, elimino algunos de los selecoteres aplicados a través de (*) en mi hoja original como el padding o los márgenes, solo se mantiene el box-sizinng: border-box para asegurar que el contenido se ajuste a las dimensaiones del dispositivo. También se aumenta el tamaño de las fuentes para facilitar la lectura. 
 Se eliminan los HTML Externos porque se va a trabajar la información en secciones, todo en la misma página. Consensuado así con la persona que hará uso de la misma
 Se colocan mejor las imágenes y se incrusta un enlace de la ubicación.
+Actualización visual de CSS
