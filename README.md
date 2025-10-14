@@ -7,3 +7,4 @@ Cambio de favicon y ajuste de imágenes. Además se incluye en CSS reset para no
 Se eliminan los HTML Externos porque se va a trabajar la información en secciones, todo en la misma página. Consensuado así con la persona que hará uso de la misma
 Se colocan mejor las imágenes y se incrusta un enlace de la ubicación.
 Actualización visual de CSS
+Paso el código por W3C Schools y corrijo los errores que me presenta, pues por ejemplo, un <ul> no puede obtener nada que no sea <li>. Por ello tengo que mover la etiqueta <h2> dentro de <li>, entre algún error más.
