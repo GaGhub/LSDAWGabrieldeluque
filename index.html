@@ -4,40 +4,38 @@
     <head>
         <meta charset="UTF-8">
        <title> PELUQUERÍA ARACELI </title>
-       <link rel="stylesheet" href="reset.css">
+       <link rel="stylesheet" href="reset.css"> <!--Añadida después de visualización de vídeo en el que se recomendaba-->
        <link rel="stylesheet"  href="estilo.css">
         <link rel="icon" href="favicon.png" type="image/png">
     </head> 
     <body>
         <header>
-           <img src="favicon.jpg">
-           <h2>
-            <nav>
+           <img src="favicon.jpg" alt="logotipo del sitio web"> <!--He tenido que añadir alt por un error en la validación, pues este describe la imagen si no se carga, además de servir para personas con discapacidad visual-->
+           <nav>
                 <ul>
-                    <li> <a href="#section1">SERVICIOS</a></li>  
-                    <li> <a href="#section2">VENTA PRODUCTOS</a></li>
-                    <li> <a href="#section3">UBICACIÓN</a></li>             
-                    <li> <a href="#section4">GALERÍA</a></li>
-                 </ul>
+                    <li> <h2><a href="#section1">SERVICIOS</a></h2></li>  
+                    <li><h2> <a href="#section2">VENTA PRODUCTOS</a></h2></li>
+                    <li> <h2><a href="#section3">UBICACIÓN</a></h2></li>             
+                    <li> <h2><a href="#section4">GALERÍA</a></h2></li>
+                </ul>
             </nav>
-            </h2>
         </header>
         <section>
-        <p><a name="section1"> </a></p>
+        <p><a id="section1"> </a></p>
         <h2>SERVICIOS</h2>
         
 
 
         </section>
         <section>
-        <p><a name="section2"></a></p>
+        <p><a id="section2"></a></p>
         <h2>PRODUCTOS</h2>
         
 
 
         </section>
         <section>
-        <p><a name="section3"> </a></p>
+        <p><a id="section3"> </a></p>
         <h2>UBICACIÓN</h2>
        
         <iframe
@@ -49,7 +47,7 @@
         loading="lazy" ></iframe>
         </section>
         <section>
-         <p><a name="section4"> </a></p>
+         <p><a id="section4"> </a></p>
         <h2>GALERÍA</h2>
       
         <img src="fachada.png" alt="Fachada de la peluquería" width="600" height="600"> 
@@ -60,7 +58,8 @@
          
          
         <footer>
-        <p> PELUQUERÍA ARACELI.</span>  CONTACTO: Teléfono - 971912953   /  <span style="color:green">Whatsapp - 679342827</span>  </p>
+            <p><strong>PIDE TU CITA</strong></p>
+        <p><strong>CONTACTO:</strong>  Teléfono - 971912953   /  <span style="color:green">Whatsapp - 679342827</span>  </p>
 
 
         </footer>

@@ -13,6 +13,9 @@ header {
     border-radius: 50px; 
     max-width: 90%;
     margin-top: 5%;}
+  strong {          /*quiero mantener el peso de negrita con strong del archivo HTML*/
+  font-weight: bold;
+}
 nav ul {
   list-style: none; /* quita los puntos de la lista como explicó el profe en la primera videoconferencia */
  }
@@ -54,7 +57,7 @@ section {
   section h2 {
   text-align: center; 
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto; /*como explica en el vídeo se queda centrado*/
   border-width: 2px;
   border-radius: 50px;
   border-style: solid;
