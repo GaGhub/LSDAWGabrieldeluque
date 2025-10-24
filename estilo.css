@@ -18,7 +18,6 @@ header {
   color: #FFFFFF; /*Color de la fuente*/
   text-align: center; /*Alineación del texto*/
   font-family: Comic Sans MS; /*fuente*/
-  font-size: xx-large; /*Tamaño de la fuente*/
   border-radius: 50px;} /*Esquinas redondeadas*//*Después de ver el vídeo, debería definir un prefijo para que los navegadores Web lo lean bien, aunque chrome lo haya realizado como buscaba*/
    header img {
      border-radius: 50px; 
@@ -61,7 +60,7 @@ section {
        border-radius: 50px;
        border-style: solid; /*Necesario determinarlo para que se vea*/
        border-color: #BDBDBD;
-       font-size:xx-large;} /*solo válido para texto, pero no para imágenes*/
+       font-size:x-large;} /*solo válido para texto, pero no para imágenes*/
      section p {
        margin: 0 auto;
        justify-content: center}

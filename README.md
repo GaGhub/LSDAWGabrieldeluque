@@ -8,6 +8,3 @@ Se eliminan los HTML Externos porque se va a trabajar la información en seccion
 Se colocan mejor las imágenes y se incrusta un enlace de la ubicación.
 Actualización visual de CSS
 Paso el código por W3C Schools y corrijo los errores que me presenta, pues por ejemplo, un <ul> no puede obtener nada que no sea <li>. Por ello tengo que mover la etiqueta <h2> dentro de <li>, entre algún error más.
-Se han añadido los contenidos de las tablas de servicios y productos.
-Se ha definido eñ tamaño de las tablas
-Se ha validado el archivo en W3C
