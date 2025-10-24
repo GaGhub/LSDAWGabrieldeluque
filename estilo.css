@@ -17,7 +17,6 @@ header {
   width: 100%;
   color: #FFFFFF; /*Color de la fuente*/
   text-align: center; /*Alineación del texto*/
-  font-family: Comic Sans MS; /*fuente*/
   border-radius: 50px;} /*Esquinas redondeadas*//*Después de ver el vídeo, debería definir un prefijo para que los navegadores Web lo lean bien, aunque chrome lo haya realizado como buscaba*/
    header img {
      border-radius: 50px; 
@@ -38,19 +37,23 @@ strong {          /*quiero mantener el peso de negrita con strong del archivo HT
    font-weight: bold;          /* fuente más gruesa */
    padding: 10px 15px;         /* espacio alrededor */
    border-radius: 5px;         /* esquinas redondeadas */}
+   nav ul li a:hover{
+   background-color: #616161; /* Color de fondo al pasar el ratón (ejemplo: un gris más oscuro) */
+   color: #FFFFFF;             /* Color de la fuente al pasar el ratón (se mantiene blanco) */
+   }
   p {
     margin-bottom: 5%;}
   iframe { /*Le doy forma al enlace de la ubicación de google*/
     border-radius: 50px;
     margin: 4%;
-    width: 90%}
+    width: 90%;
+      }
 section {
    background-color: #F5F5F5; 
    color:#616161; 
    font-family: Comic Sans MS;
    padding: 1%; /*aplico conceptos del box-sizing*/
    margin: 2%;
-    font-size:x-large;
    border-radius: 50px;}
      section h2 {
        text-align: center; 
@@ -60,7 +63,12 @@ section {
        border-radius: 50px;
        border-style: solid; /*Necesario determinarlo para que se vea*/
        border-color: #BDBDBD;
-       font-size:x-large;} /*solo válido para texto, pero no para imágenes*/
+       font-size:x-large;
+       background-image: linear-gradient(to right, #BDBDBD, #9E9E9E); /* Definimos para todas las secciones con título h2 el gradiente como background-image. Lo usaré para definirlo de forma suave de izquierda a derecha, combinando con los colores de la cabecera  */
+       color: #FFFFFF; /*Cambiamo el color del texto para que contraste con el fondo oscuro */
+       padding: 10px; /* Le añado relleno para que se aprecie más el gradiente*/
+          } 
+       
      section p {
        margin: 0 auto;
        justify-content: center}
@@ -71,9 +79,17 @@ section {
        margin: 2%; /* espacio entre ellas */
        border-radius: 50px;
        vertical-align: middle; /* para que se alineen correctamente */
-       object-fit: contain; /* opcional, asegura que no se recorte, aunque sin este también se veía bien */}
-       table {
-  margin: 40px auto;   
+       object-fit: contain; /* opcional, asegura que no se recorte, aunque sin este también se veía bien */
+       transition: transform 0.3s ease-in-out; /*tiempo de transición para el cambio de tamaño*/
+      }
+      section img:hover {
+       transform: scale(1.05);/* Hago la imagen un 5% más grande */
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Le añado una sombra sutil para darle profundidad */
+       z-index: 10; /* Asegura que la imagen aumentada esté sobre otras */
+       }
+    
+    
+       table {   
   width: 90%;
   margin: 20px auto;
   border: 2px solid #BDBDBD;  /* define grosor y color del borde exterior */
@@ -85,8 +101,6 @@ section {
   tr, th, td { 
   text-align: center;             /* 🔹 Centra texto e imágenes */
   vertical-align: middle;
- font-size:x-large;
- font-family:Comic Sans MS; /*fuente*/
  border: 1px solid #BDBDBD; /* Borde para las filas, encabezados y celdas */
  padding: 2%
  } 
@@ -104,4 +118,8 @@ footer {
    color: #212121; 
    margin:5%;
    font-family: Comic Sans MS;
+  }
+  footer img {
+    width: 20px;
+    border-radius: 5px
   }
