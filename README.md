@@ -8,3 +8,4 @@ Se eliminan los HTML Externos porque se va a trabajar la información en seccion
 Se colocan mejor las imágenes y se incrusta un enlace de la ubicación.
 Actualización visual de CSS
 Paso el código por W3C Schools y corrijo los errores que me presenta, pues por ejemplo, un <ul> no puede obtener nada que no sea <li>. Por ello tengo que mover la etiqueta <h2> dentro de <li>, entre algún error más.
+Se eliminan imágenes de cara a la entrega para mejorar el aspecto. Además se añade en el menú "CONTACTO", que se me había olvidado, y se vincula al footer para que al hacer click te lleve directamente. Se actualizan los tamaños de letra para que tengan un crecimiento progresivo en tamaño. Falta revisar las solicitudes del trabajo e incluir los elementos que aún no estén presentes.
