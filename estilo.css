@@ -87,6 +87,10 @@ section {
        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Le añado una sombra sutil para darle profundidad */
        z-index: 10; /* Asegura que la imagen aumentada esté sobre otras */
        }
+       section a img { /* le quito el borde/subrayado azul de las imagenes con enlace*/
+        border: none;
+        text-decoration: none; 
+        }
     
     
        table {   
