@@ -14,7 +14,7 @@
   
 - Se colocan mejor las imágenes y se incrusta un enlace de la ubicación.
   
-- Paso el código por W3C Schools y corrijo los errores que me presenta, pues por ejemplo, un <ul> no puede obtener nada que no sea <li>. Por ello, tengo que mover la etiqueta <h2> dentro de <li>, entre algún error más.
+- Paso el código por W3C Schools y corrijo los errores que me presenta, pues por ejemplo, un 'ul' no puede obtener nada que no sea 'li'. Por ello, tengo que mover la etiqueta <h2> dentro de <li>, entre algún error más.
   
 - Se han añadido los contenidos de las tablas de servicios y productos.
   
@@ -25,6 +25,7 @@
 - Comienzo fase endterm
   
 - Se añade el formulario del ejercicio 7, sin estilo CSS
+
 
 
 
