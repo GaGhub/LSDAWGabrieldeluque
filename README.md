@@ -10,5 +10,7 @@ Paso el código por W3C Schools y corrijo los errores que me presenta, pues por 
 Se han añadido los contenidos de las tablas de servicios y productos.
 Se ha definido eñ tamaño de las tablas
 Se eliminan imágenes de cara a la entrega para mejorar el aspecto. Además se añade en el menú "CONTACTO", que se me había olvidado, y se vincula al footer para que al hacer click te lleve directamente. Se actualizan los tamaños de letra para que tengan un crecimiento progresivo en tamaño. Falta revisar las solicitudes del trabajo e incluir los elementos que aún no estén presentes.
+Comienzo fase endterm
+Se añade el formulario del ejercicio 7, sin estilo CSS
 
 
