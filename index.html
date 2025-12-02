@@ -17,9 +17,11 @@
                     <li><h1><strong> <a href="#section2">VENTA PRODUCTOS</a></strong></h1></li>
                     <li> <h1><strong><a href="#section3">UBICACIÓN</a></strong></h1></li>             
                     <li> <h1><strong><a href="#section4">GALERÍA</a></strong></h1></li>
-                    <li> <h1><strong><a href="#section5">CONTACTO Y CONSULTAS</a></strong></h1></li>
+                    <li> <h1><strong><a href="#section5">CONTACTO</a></strong></h1></li>
                 </ul>
             </nav>
+            <!-- BOTÓN PARA EL SEGUNDO SCRIPT DE INTERACTIVIDAD (Modificación de estilo/tema) -->
+            <button id="toggle-theme-button" class="action-button">Cambiar Tema</button>
         </header>
         <section>
         <p><a id="section1"> </a></p> <!--vinculo el mmenú con la sección, lo haremos en todas-->
@@ -282,8 +284,7 @@
         <p><a id="section3"> </a></p>
         <h2>UBICACIÓN</h2>
        
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6149.822041004523!2d2.664319!3d39.584155700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979306b9cfde57%3A0xf718cf4eab04adfc!2sPeluqueria%20Araceli!5e0!3m2!1ses!2ses!4v1760293845720!5m2!1ses!2ses" 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6149.822041004523!2d2.664319!3d39.584155700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979306b9cfde57%3A0xf718cf4eab04adfc!2sPeluqueria%20Araceli!5e0!3m2!1ses!2ses!4v1764670958806!5m2!1ses!2ses"
         width="900" 
         height="450" 
         style="border:0;"
@@ -312,42 +313,131 @@
         <img src="pelo2.png" alt="Pelo2">
         </a>
         </section>
-         <section>
+         
+        <!-- Ahora creo el formulario para el ejercicio 7, que lo meteré justo antes del contacto, en la misma sección -->
+        <section>
             <p><a id="section5_form"> </a></p> 
             <h2><strong>CONTACTO Y CONSULTAS</strong></h2>
-            <form action="#" method="post" id="consulta-form">    <!-- la #, hace que la acción de envío del formulario simplemente recargue la misma página o salte al principio de ella-->
-                <p>
-                    <label for="nombre">Nombre:</label><br>                     <!--Creo el campo 1-->
-                    <input type="text" id="nombre" name="nombre" required>  <!--required obliga a rellenar el campo para enviar el formualrio-->
-                </p>
-                <p>
-                    <label for="email">Email:</label><br>                        <!--Creo el campo 2-->
-                    <input type="email" id="email" name="email" required>
-                </p>
-                <p>
-                    <label for="tipo_consulta">Tipo de Consulta:</label><br>      <!--Creo el desplegable para consultas por cada sección-->
-                    <select id="tipo_consulta" name="tipo_consulta" required>
-                        <option value="" disabled selected>-- Seleccione un tema --</option>
-                        <option value="cita">Solicitar Cita</option>
-                        <option value="productos">Información de Productos</option>
-                        <option value="servicios">Detalles de Servicios</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="mensaje">Mensaje:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea> <!--Creamos área de texto con un espacio más grande para incluir una descripción-->
-                </p>
-                <p>
-                    <button type="submit">Enviar Consulta</button>  <!--Elemento para hacer click y enviar el formulario -->
-                </p>
+            <!-- Pongo action="#" para que no se envíe el formulario y le asigno un id para poder interactuar con el script -->
+            <form action="#" method="post" id="consulta-form">  <!-- Lo he puesto por id porque con el tag name no me efectuaba el cambio de aspecto con el CSS-->
+                <!-- Ahora creo un contenedor para que el script pueda que cuando ennviemos el formulario se reemplace todo el contenido al enviar por el que he añadido en el script -->
+                <div id="form-content">
+                    <p><!--Añado "required" en todos los campos para que no permita enviar el formulario vacío-->
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" required> <!--Tipo texto-->
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><!--Tipo mail, para que detecte si tiene el formato correcto-->
+                    </p>
+                    <p>
+                        <label for="tipo_consulta">Tipo de Consulta:</label><br>
+                        <select id="tipo_consulta" name="tipo_consulta" required> <!-- Tipo consulta para que sea un desplegable. Además el valor luego lo cogeré en el script para crear el mensaje de confirmación-->
+                            <option value="" disabled selected>-- Seleccione un tema de consulta --</option> <!--Valor por defecto del desplegable-->
+                            <option value="cita">Solicitar Cita</option> <!--En rojo el valor para el Script y el blanco la opción que se lee en el desplegable-->
+                            <option value="productos">Información de Productos</option>
+                            <option value="servicios">Detalles de Servicios</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea> <!--Le asigno su id y añado el el rows para ampliar el tamaño del campo para que visualmente sea más alto-->
+                    </p>
+                    <p>
+                        <button type="submit">Enviar Consulta</button> <!-- Tipo submit para que sea de clickable-->
+                    </p>
+                </div>
             </form>
         </section>
+
         <footer>
              <p><a id="section5"> </a></p>
             <p><strong>PIDE TU CITA</strong></p>
         <p><strong>CONTACTO:</strong>  <img src="telefono.png" alt="telefono"> 971912953   / <img src="whatsapp.png" alt="whatsapp"> <span style="color:green"> 679342827</span>  </p>
         </footer>
 
+
+        <!--SCRIPTS JAVASCRIPT --> <!--He descubierto que los comentarios en el Script tienen una sintaxis diferente-->
+        <script>
+            // Envuelvo todo el código en DOMContentLoaded para garantizar que todos los elementos HTML existan antes de que el script intente interactuar con ellos.
+            document.addEventListener('DOMContentLoaded', function() {
+                // Creo el Script seleccionando por elemento para ejecutar cambios en el formulario
+                const consultaForm = document.getElementById('consulta-form');
+
+                if (consultaForm) { // Comprobamos que el formulario existe
+                    consultaForm.addEventListener(
+                        'submit', function(event) {
+                        // Lo añado para prevenir el envío por defecto del formulario.
+                        event.preventDefault(); 
+                        
+                        try {
+                            // Obtiene la información dentro de los campos del formulario, todo lo que hemos definido con el id form-content.
+                            const formContent = document.getElementById('form-content');
+                            
+                            // Obtiene el valor seleccionado en el desplegable.
+                            const tipoConsulta = document.getElementById('tipo_consulta').value;
+
+                            // Modifica el contenido HTML que hay en el cuestionario con el mensaje de confirmación del envío que pondre debajo, al cual le daré un aspecto diferente.
+                            formContent.innerHTML = 
+                                `<div style="text-align: center; padding: 40px; background-color: #E8F5E9; border-radius: 10px; border: 2px solid #81C784;">
+                                    <h3>¡Consulta Enviada con Éxito!</h3>
+                                    <p>Gracias por tu interés. En breve nos pondremos en contacto contigo.</p>
+                                    <p>Hemos recibido tu consulta sobre: <strong>${tipoConsulta}</strong>.</p> 
+                                 </div>`; //Cojo el valor del desplegable para que cuando genere el mensaje de confirmación ponga sobre qué ha hecho la consulta.
+                        } catch (error) {
+                            //Ahora hay que definir que pasa si hay un error, lo que haré es registrarlo en la consola.
+                            console.error('Error al procesar el formulario:', error);
+                            // Como último recurso, mostraré un mensaje simple en el formulario.
+                            document.getElementById('form-content').innerHTML = `
+                                <p style="color: red;">Error al procesar. Por favor, revisa la consola para más detalles o recarga la página.</p>`;
+                            }
+                            }
+                            );
+                         }
+
+
+                // Creo el Script que modificará el estilo CSS de un componente (Cambiaré tema en el Header)
+                const toggleButton = document.getElementById('toggle-theme-button');
+                const header = document.querySelector('header');
+                const navLinks = document.querySelectorAll('nav a');
+                
+                // Estado para saber qué tema está activo.
+                let isDarkTheme = false;
+
+                if (toggleButton && header) { // Comprobamos que los elementos principales existen
+                    toggleButton.addEventListener('click', function() {
+                        if (!isDarkTheme) { //Creo la primera condición
+                            // Aplico un tema "Oscuro" (modificando estilos CSS inline)
+                            header.style.backgroundColor = '#616161'; // Gris oscuro
+                            header.style.color = '#BDBDBD'; // Texto gris claro
+
+                            navLinks.forEach(link => {
+                                link.style.color = '#FFFFFF'; 
+                            });
+
+                            
+                            // Creo la segunda condición, que es para volver a cambiar a claro
+                            toggleButton.textContent = 'Modo día';
+                            isDarkTheme = true;}
+                            else {
+                            // Para volver al tema original, que era el claro, simplemente restauraré los valores originales definidos en estilo.css
+                            
+                            header.style.backgroundColor = '#BDBDBD';
+                            header.style.color = '#FFFFFF';
+
+                            navLinks.forEach(link => {
+                                link.style.color = '#FFFFFF';
+                            });
+                            
+                            toggleButton.textContent = 'Modo noche';
+                            isDarkTheme = false;
+                        }
+                        }       
+                        );
+                }
+            });
+        </script>
+
     </body>
-</html> 
+</html>

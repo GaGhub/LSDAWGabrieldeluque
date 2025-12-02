@@ -127,3 +127,93 @@ footer {
     width: 20px;
     border-radius: 5px
   }
+
+  /*Cambios a partir de endterm, con el HTML incluyendo JavaScript.*/
+/* Estilo para el formulario */
+#consulta-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #FFFFFF; /* Fondo blanco para el formulario */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Alineamos el texto a la izquierda dentro del formulario */
+}
+
+#consulta-form p {
+  margin-bottom: 15px;
+}
+
+#consulta-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #616161; /* Color del texto para las etiquetas */
+}
+
+#consulta-form input[type="text"],
+#consulta-form input[type="email"],
+#consulta-form select,
+#consulta-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  box-sizing: border-box; /* Asegura que padding y border estén incluidos en el width */
+  font-size: large;
+  font-family: inherit;
+}
+
+#consulta-form textarea {
+  resize: vertical;
+}
+
+#consulta-form button[type="submit"] {
+  background-color: #BDBDBD;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#consulta-form button[type="submit"]:hover {
+  background-color: #9E9E9E;
+}
+
+/*Estilo para cambio de tema*/
+
+/* Modificación en 'header': Añado padding para dar espacio al botón */
+header {
+  padding: 20px 0; 
+}
+
+/* Modifico los enlaces del menú añadiendo una transición como efecto visual a las letras */
+nav ul li a {
+   transition: color 1s; /* Esto hace que el cambio de color no sea brusco */
+}
+
+/* Estilo para el botón que habrá para 'Cambiar Tema' */
+.action-button {
+    background-color: #9E9E9E; /* Color de fondo inicial del boton */
+    color: #FFFFFF;            /* Color del texto */
+    padding: 10px 20px;        /* Relleno interno */
+    border: none;              /* Sin bordes */
+    border-radius: 25px;       /* Bordes redondeados */
+    cursor: pointer;           /* Convierto la flecha en una manita al pasar el ratón */
+    font-size: large;
+    font-weight: bold;
+    margin-top: 15px;          /* Separación respecto al menú */
+    transition: background-color 0,8s, transform 1s; /* Animaciones suaves */
+}
+
+/* Le añado un efecto al pasar el ratón por encima del botón */
+.action-button:hover {
+    background-color: #212121; /* Lo oscurezco para que contraste un poco */
+    transform: scale(1.20);    /* Crece ligeramente para resaltarlo más */
+}
