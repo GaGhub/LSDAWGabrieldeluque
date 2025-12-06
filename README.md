@@ -25,10 +25,13 @@
 - Comienzo fase endterm
 
 - Inclusión de JavaScript
-- 
+  
 - Se añade el formulario del ejercicio 7, sin estilo CSS
 
 - Se actualiza el aspecto del formulario a través del CSS y se añade la moodificación de cambio de tema del header, como se solicita en el ejercicio, también se diseña en el archivo CSS.
+
+- Se añade texto explicativo en los campos del cuestionario.
+
 
 
 
