@@ -32,6 +32,9 @@
 
 - Se añade texto explicativo en los campos del cuestionario.
 
+- Se realizan pequeños cambios en el CSS tras no pasar la validación con los cambios intruducidos. Ya están corregidos y la validación del HTML y del CSS pasadas con éxito.
+
+
 
 
 
