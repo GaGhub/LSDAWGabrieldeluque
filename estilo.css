@@ -5,7 +5,7 @@ box-sizing: border-box; /* obliga al contenido a caber en las dimensiones que le
 }
 body {
 font-size:x-large;
-  font-family: Comic Sans MS; /*fuente*/
+  font-family: "Comic Sans MS"; /*fuente*/
   max-width: 100%; 
   margin-left: 5%;
   margin-right: 5%;
@@ -51,7 +51,7 @@ strong {          /*quiero mantener el peso de negrita con strong del archivo HT
 section {
    background-color: #F5F5F5; 
    color:#616161; 
-   font-family: Comic Sans MS;
+   font-family: "Comic Sans MS";
    padding: 1%; /*aplico conceptos del box-sizing*/
    margin: 2%;
    border-radius: 50px;}
@@ -121,7 +121,7 @@ footer {
    background-color: #FFFFFF; 
    color: #212121; 
    margin:5%;
-   font-family: Comic Sans MS;
+   font-family: "Comic Sans MS";
   }
   footer img {
     width: 20px;
@@ -209,7 +209,6 @@ nav ul li a {
     font-size: large;
     font-weight: bold;
     margin-top: 15px;          /* Separación respecto al menú */
-    transition: background-color 0,8s, transform 1s; /* Animaciones suaves */
 }
 
 /* Le añado un efecto al pasar el ratón por encima del botón */
