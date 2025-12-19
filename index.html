@@ -17,14 +17,14 @@
                     <li><h1><strong> <a href="#section2">VENTA PRODUCTOS</a></strong></h1></li>
                     <li> <h1><strong><a href="#section3">UBICACIÓN</a></strong></h1></li>             
                     <li> <h1><strong><a href="#section4">GALERÍA</a></strong></h1></li>
-                    <li> <h1><strong><a href="#section5">CONTACTO</a></strong></h1></li>
+                    <li> <h1><strong><a href="#section5">CONTACTO Y CONSULTAS</a></strong></h1></li>
                 </ul>
             </nav>
             <!-- BOTÓN PARA EL SEGUNDO SCRIPT DE INTERACTIVIDAD (Modificación de estilo/tema) -->
             <button id="toggle-theme-button" class="action-button">Cambiar Tema</button>
         </header>
         <section>
-        <p><a id="section1"> </a></p> <!--vinculo el mmenú con la sección, lo haremos en todas-->
+        <p><a id="section1"> </a></p> <!--vinculo del mmenú con la sección, lo haremos en todas-->
         <h2><strong>SERVICIOS</strong></h2>
          <table> <!--Creamos la primera tabla seguiendo los pasos de los apuntes-->
                <tr>
@@ -294,7 +294,7 @@
         <section>
          <p><a id="section4"> </a></p>
         <h2><strong>GALERÍA</strong></h2>
-        <a href="fachada.png" target="_blank"> <!--Añadido el elemento a para que al hacer click se abra la imagen en una pestaña en blanco-->
+        <a href="fachada.png" target="_blank"> <!--Añadido el elemento para que al hacer click se abra la imagen en una pestaña en blanco-->
         <img src="fachada.png" alt="Fachada de la peluquería" > 
         </a>
          <a href="general.png" target="_blank">
@@ -342,10 +342,10 @@
                     </p>
                     <p>
                         <label for="mensaje">Mensaje:</label><br>
-                        <textarea id="mensaje" name="mensaje" placeholder="Realiza tu consulta" rows="4" required></textarea> <!--Le asigno su id y añado el el rows para ampliar el tamaño del campo para que visualmente sea más alto-->
+                        <textarea id="mensaje" name="mensaje" placeholder="Realiza tu consulta" rows="4" required></textarea> <!--Le asigno su id y añado el rows para ampliar el tamaño del campo para que visualmente sea más alto-->
                     </p>
                     <p>
-                        <button type="submit">Enviar Consulta</button> <!-- Tipo submit para que sea de clickable-->
+                        <button type="submit">Enviar Consulta</button> <!-- Tipo submit para que sea clickable-->
                     </p>
                 </div>
             </form>
@@ -362,7 +362,7 @@
         <script>
             // Envuelvo todo el código en DOMContentLoaded para garantizar que todos los elementos HTML existan antes de que el script intente interactuar con ellos.
             document.addEventListener('DOMContentLoaded', function() {
-                // Creo el Script seleccionando por elemento para ejecutar cambios en el formulario
+                // Creo el Script seleccionando por elemento, para ejecutar cambios en el formulario
                 const consultaForm = document.getElementById('consulta-form');
 
                 if (consultaForm) { // Comprobamos que el formulario existe
@@ -372,13 +372,13 @@
                         event.preventDefault(); 
                         
                         try {
-                            // Obtiene la información dentro de los campos del formulario, todo lo que hemos definido con el id form-content.
+                            // Obtengo la información dentro de los campos del formulario, todo lo que hemos definido con el id form-content.
                             const formContent = document.getElementById('form-content');
                             
-                            // Obtiene el valor seleccionado en el desplegable.
+                            // Obtengo el valor seleccionado en el desplegable.
                             const tipoConsulta = document.getElementById('tipo_consulta').value;
 
-                            // Modifica el contenido HTML que hay en el cuestionario con el mensaje de confirmación del envío que pondre debajo, al cual le daré un aspecto diferente.
+                            // Modifico el contenido HTML que hay en el cuestionario con el mensaje de confirmación del envío que pondre debajo, al cual le daré un aspecto diferente.
                             formContent.innerHTML = 
                                 `<div style="text-align: center; padding: 40px; background-color: #E8F5E9; border-radius: 10px; border: 2px solid #81C784;">
                                     <h3>¡Consulta Enviada con Éxito!</h3>
@@ -405,7 +405,7 @@
                 // Estado para saber qué tema está activo.
                 let isDarkTheme = false;
 
-                if (toggleButton && header) { // Comprobamos que los elementos principales existen
+                if (toggleButton && header) { // Compruebo que los elementos principales existen
                     toggleButton.addEventListener('click', function() {
                         if (!isDarkTheme) { //Creo la primera condición
                             // Aplico un tema "Oscuro" (modificando estilos CSS inline)

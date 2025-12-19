@@ -1,5 +1,5 @@
 * { /*se aplica a toda la web*/
-box-sizing: border-box; /* obliga al contenido a caber en las dimensiones que le marquemos, es como delimitar el tamaño máximo*/
+box-sizing: border-box; /* obligo al contenido a caber en las dimensiones que le marquemos, es como delimitar el tamaño máximo*/
  
   
 }
@@ -25,7 +25,7 @@ header {
 strong {          /*quiero mantener el peso de negrita con strong del archivo HTML*/
   font-weight: bold;}
   nav ul {
-  list-style: none; /* quita los puntos de la lista como explicó el profe en la primera videoconferencia */}
+  list-style: none; /* quito los puntos de la lista como explicó el profe en la primera videoconferencia */}
   nav ul li {
   display: inline-block; /* coloca los <li> en línea */
   margin-right: 20px; /* separación entre elementos */
@@ -65,7 +65,7 @@ section {
        border-color: #BDBDBD;
        font-size:x-large;
        background-image: linear-gradient(to right, #BDBDBD, #9E9E9E); /* Definimos para todas las secciones con título h2 el gradiente como background-image. Lo usaré para definirlo de forma suave de izquierda a derecha, combinando con los colores de la cabecera  */
-       color: #FFFFFF; /*Cambiamo el color del texto para que contraste con el fondo oscuro */
+       color: #FFFFFF; /*Cambio el color del texto para que contraste con el fondo oscuro */
        padding: 10px; /* Le añado relleno para que se aprecie más el gradiente*/
           } 
        
@@ -85,7 +85,7 @@ section {
       section img:hover {
        transform: scale(1.05);/* Hago la imagen un 5% más grande */
        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Le añado una sombra sutil para darle profundidad */
-       z-index: 10; /* Asegura que la imagen aumentada esté sobre otras */
+       z-index: 10; /* Aseguro que la imagen aumentada esté sobre otras */
        }
        section a img { /* le quito el borde/subrayado azul de las imagenes con enlace*/
         border: none;
@@ -96,8 +96,8 @@ section {
        table {   
   width: 90%;
   margin: 20px auto;
-  border: 2px solid #BDBDBD;  /* define grosor y color del borde exterior */
-  border-collapse: collapse;  /* une bordes de celdas */
+  border: 2px solid #BDBDBD;  /* defino grosor y color del borde exterior */
+  border-collapse: collapse;  /* uno bordes de celdas */
   border-radius: 50px;
   table-layout: fixed;
   }
@@ -115,7 +115,7 @@ object-fit: contain;
 border-radius: 50px;
 display: block;
 height: 200px;
-display: block;                 /* 🔹 Evita espacio raro debajo de la imagen */
+display: block;                 /* 🔹 Evito espacio raro debajo de la imagen */
 }
 footer {
    background-color: #FFFFFF; 
@@ -159,7 +159,7 @@ footer {
   padding: 10px;
   border: 1px solid #BDBDBD;
   border-radius: 5px;
-  box-sizing: border-box; /* Asegura que padding y border estén incluidos en el width */
+  box-sizing: border-box; /* Aseguro que padding y border estén incluidos en el width */
   font-size: large;
   font-family: inherit;
 }
