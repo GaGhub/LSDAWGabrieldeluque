@@ -34,6 +34,9 @@
 
 - Se realizan pequeños cambios en el CSS tras no pasar la validación con los cambios intruducidos. Ya están corregidos y la validación del HTML y del CSS pasadas con éxito.
 
+- Se ajustan algunos aspectos de contenido y se añaden/modifical algunos comentarios. Se da por terminada la página web.
+
+
 
 
 
